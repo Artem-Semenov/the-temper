@@ -34,10 +34,11 @@
     font-style: normal;
     font-weight: 900;
     line-height: normal;
-    text-align: center;
+    justify-content: center;
     display: flex;
     flex-flow: row wrap;
-    & > * {
+    column-gap: 20px;
+    span:nth-child(3) {
       flex-basis: 100%;
     }
   }
@@ -49,9 +50,10 @@
     font-style: normal;
     font-weight: 900;
     line-height: normal;
+    text-align: center;
     &:after {
       content: "авторського";
-      animation: spin 7s linear infinite;
+      animation: spin 4s linear infinite;
     }
   }
 
@@ -70,8 +72,12 @@
     &__title {
       font-size: 100px;
       text-align: left;
-      gap: 20px;
-      span:nth-child(3),
+      column-gap: 20px;
+      justify-content: start;
+      span:nth-child(1) {
+        flex-basis: 100%;
+      }
+      span:nth-child(2),
       span:last-child {
         flex-basis: unset;
       }
@@ -92,32 +98,11 @@
 }
 
 @keyframes spin {
-  10% {
-    content: "dolor";
+  33% {
+    content: "сміливого";
   }
-  20% {
-    content: "sit";
-  }
-  30% {
-    content: "amet";
-  }
-  40% {
-    content: "consectetur";
-  }
-  50% {
-    content: "adipisicing";
-  }
-  60% {
-    content: "elit";
-  }
-  70% {
-    content: "Hic";
-  }
-  80% {
-    content: "atque";
-  }
-  90% {
-    content: "fuga";
+  66% {
+    content: "лімітованого";
   }
 }
 
