@@ -72,6 +72,7 @@
       background: linear-gradient(326deg, #20261f 35.31%, #595f4b 127.04%);
       margin-top: 102px;
       display: flex;
+      flex-basis: calc(50% + 10px);
     }
 
     &__logo {
