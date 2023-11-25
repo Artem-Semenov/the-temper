@@ -1,5 +1,5 @@
 .advantages {
-  padding-top: 52px;
+  padding: 52px 0 59px 0;
   color: var(--white);
   background: #20261f;
   font-family: var(--font-accent);
@@ -64,6 +64,7 @@
   @media (min-width: $desktopSizeM) {
     & {
       padding-top: 114px;
+      padding-bottom: 97px;
     }
     &__content {
       gap: 117px;
