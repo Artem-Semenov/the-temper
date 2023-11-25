@@ -29,7 +29,7 @@ $transition: 0.3s ease;
   --mobile-nav-btn-color: var(--black);
   --header-nav-color: var(--black);
   --header-nav-color-active: #aea8a8;
-
+  --header-logo-url: url("/img/common/logo-black.png");
   @media (min-width: $tabletSize) {
     --container-width: #{$containerTabletMaxWidth};
   }
@@ -50,4 +50,5 @@ $transition: 0.3s ease;
 .business {
   --mobile-nav-btn-color: var(--white);
   --header-nav-color: #fff;
+  --header-logo-url: url("/img/common/logo.png");
 }

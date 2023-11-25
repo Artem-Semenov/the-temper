@@ -3,6 +3,12 @@
   position: absolute;
   width: 100%;
   z-index: 1;
+  &__logo.logo {
+    flex-shrink: 0;
+    width: 169px;
+    height: 71px;
+    background: var(--header-logo-url) center / cover no-repeat;
+  }
   &__lang {
     position: absolute;
     top: 56px;
@@ -25,10 +31,13 @@
         color: var(--header-nav-color-active);
       }
     }
-    
 
     @media (min-width: $desktopSizeM) {
       position: static;
+      &__logo {
+        width: 190px;
+        height: 80px;
+      }
     }
   }
   &__row {
