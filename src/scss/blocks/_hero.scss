@@ -35,6 +35,11 @@
     font-weight: 900;
     line-height: normal;
     text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    & > * {
+      flex-basis: 100%;
+    }
   }
 
   &__animation {
@@ -65,6 +70,11 @@
     &__title {
       font-size: 100px;
       text-align: left;
+      gap: 20px;
+      span:nth-child(3),
+      span:last-child {
+        flex-basis: unset;
+      }
     }
     &__desc {
       font-size: 32px;
