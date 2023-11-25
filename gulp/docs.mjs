@@ -59,12 +59,12 @@ task("html:docs", (done) => {
         basepath: "@file",
       })
     )
-    .pipe(
+    /* .pipe(
       gulpHtmlImgWrapper({
         logger: true, // false for not showing message with amount of wrapped img tags for each file
         extensions: [".jpg", ".png", ".jpeg"], // write your own extensions pack (case insensitive)
       })
-    )
+    ) */
     .pipe(
       changedInPlace({
         firstPass: true,
