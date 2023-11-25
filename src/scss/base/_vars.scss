@@ -1,26 +1,34 @@
 $tabletSize: 768px;
 $desktopSizeM: 1024px;
 $desktopSizeL: 1440px;
+$desktopSizeXL: 1920px;
 
 $containerWidth: 500px;
 $containerTabletMaxWidth: 800px;
 $containerdesktopSizeMMaxWidth: 1100px;
 $containerdesktopSizeLMaxWidth: 1300px;
+$containerdesktopSizeXLMaxWidth: 1740px;
 
-$font-main: "Poppins", sans-serif;
-$font-accent: "Playfair Display", serif;
+$font-main: "Mariupol";
+$font-accent: "Helvetica";
+$font-form: "Andale";
 
-$containerPadding: 15px;
+$containerPadding: 20px;
+
+$transition: 0.3s ease;
 
 :root {
   --container-width: #{$containerWidth};
   --container-padding: #{$containerPadding};
   --font-main: #{$font-main};
   --font-accent: #{$font-accent};
-
-  --page-bg: #fff;
-  --text-color: #000;
+  --font-form: #{$font-form};
+  --white: #fff;
+  --black: #000;
   --accent: #ac182c;
+  --mobile-nav-btn-color: var(--black);
+  --header-nav-color: var(--black);
+  --header-nav-color-active: #aea8a8;
 
   @media (min-width: $tabletSize) {
     --container-width: #{$containerTabletMaxWidth};
@@ -33,6 +41,15 @@ $containerPadding: 15px;
   @media (min-width: $desktopSizeL) {
     --container-width: #{$containerdesktopSizeLMaxWidth};
   }
+  @media (min-width: $desktopSizeXL) {
+    --container-width: #{$containerdesktopSizeXLMaxWidth};
+  }
+}
+
+.home,
+.business {
+  --mobile-nav-btn-color: var(--white);
+  --header-nav-color: #fff;
 }
 
 .dark {

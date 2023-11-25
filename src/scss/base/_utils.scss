@@ -20,7 +20,20 @@
   display: none;
 }
 
-@media (min-width: $containerWidth) {
+.zoom-hover {
+  transition: transform $transition;
+}
+@media (any-hover: hover) {
+  .zoom-hover {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+@media (min-width: $tabletSize) {
+}
+
+@media (min-width: $desktopSizeM) {
   .d-l {
     display: block;
   }
@@ -28,4 +41,10 @@
   .d-s {
     display: none;
   }
+}
+
+@media (min-width: $desktopSizeL) {
+}
+
+@media (min-width: $desktopSizeXL) {
 }

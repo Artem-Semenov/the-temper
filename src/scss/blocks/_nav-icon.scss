@@ -8,7 +8,7 @@
   --line-height: 4px;
   --spacing: 6px;
 
-  --color: #000;
+  --color: var(--mobile-nav-btn-color);
   --radius: 4px;
 
   /* Fixed height and width */
@@ -60,6 +60,7 @@
 
 .nav-icon.nav-icon--active {
   background-color: transparent;
+  --color: var(--white);
 }
 
 .nav-icon.nav-icon--active::before,
@@ -80,11 +81,19 @@
 
 .mobile-nav-btn {
   z-index: 999;
-  // display: none;
 }
 
-@media (max-width: 1000px) {
+@media (min-width: $tabletSize) {
+}
+
+@media (min-width: $desktopSizeM) {
   .mobile-nav-btn {
-    display: block;
+    display: none;
   }
+}
+
+@media (min-width: $desktopSizeL) {
+}
+
+@media (min-width: $desktopSizeXL) {
 }

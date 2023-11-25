@@ -8,16 +8,19 @@
 </head>
 
 <body>
-	@@include('blocks/svgSprite.html')
+	<div class="home">
+		@@include('blocks/svgSprite.html')
 
-	@@include('blocks/header.html', {
-	active: 'services',
-	})
-	<div class="main">
+		@@include('blocks/header.html', {
+		active: '',
+		})
+		<div class="main">
+			@@include('blocks/hero.html')
 
 
+		</div>
+		@@include('blocks/footer.html')
 	</div>
-	@@include('blocks/footer.html')
 	<script src="./js/index.bundle.js"></script>
 </body>
 
