@@ -37,6 +37,42 @@
   }
 
   &__content {
+    &__body {
+    }
+    .form__sucess-body {
+      display: none;
+    }
+    .form__success-body-title {
+      color: var(--black);
+      text-align: center;
+      font-family: var(--font-accent);
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+    }
+    .form__success-body-desc {
+      color: #4f4f4f;
+      text-align: center;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    &.success {
+      .form__body {
+        display: none;
+      }
+
+      .form__sucess-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 143px 0;
+      }
+    }
   }
 
   &__title {
@@ -108,7 +144,7 @@
 
   &__input {
     width: 100%;
-    background: rgba(32, 38, 31, 0.54);
+    background: var(--input-bg);
     padding: 13px 18px;
     border: 1px solid transparent;
     &::placeholder {
@@ -140,19 +176,19 @@
   .ts-wrapper.single .ts-control,
   .ts-control,
   .ts-wrapper.single.input-active .ts-control {
-    background: rgba(32, 38, 31, 0.54);
+    background: var(--input-bg);
     color: #fff;
     border: 1px solid transparent;
     border-radius: 0;
     font-size: inherit;
-    padding: 13px 18px;
+    padding: 11px 18px;
     box-shadow: none;
   }
   .ts-wrapper.single .ts-control,
   .ts-dropdown.single {
     border-radius: 0;
     font-size: inherit;
-    background: rgba(32, 38, 31, 0.54);
+    background: var(--input-bg);
     color: #fff;
     border: 1px solid transparent;
     margin-top: 0;
@@ -296,6 +332,11 @@
     }
     .ts-wrapper div {
       line-height: 1;
+    }
+    &__button {
+      margin: auto;
+      font-size: 22px;
+      padding: 15px 55px;
     }
   }
 

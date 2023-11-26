@@ -46,7 +46,7 @@ export class Forms {
     this.#sendForm(formType)
       .then(
         (res) => {
-          formObj.formNode.classList.add("success");
+          formObj.formNode.parentElement.parentElement.classList.add("success");
         },
         (error) => {
           formObj.formNode.classList.add("error");

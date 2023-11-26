@@ -17,6 +17,8 @@ $containerPadding: 20px;
 
 $transition: 0.3s ease;
 
+$inputBg: rgba(32, 38, 31, 0.54);
+
 :root {
   --container-width: #{$containerWidth};
   --container-padding: #{$containerPadding};
@@ -30,6 +32,8 @@ $transition: 0.3s ease;
   --header-nav-color: var(--black);
   --header-nav-color-active: #aea8a8;
   --header-logo-url: url("/img/common/logo-black.png");
+  --input-bg: #{$inputBg};
+
   @media (min-width: $tabletSize) {
     --container-width: #{$containerTabletMaxWidth};
   }
