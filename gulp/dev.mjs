@@ -9,6 +9,7 @@ import fs from "fs"; //for files control / delete etc
 import { default as sourceMap } from "gulp-sourcemaps"; //to see in dev panel the path to original scss file with styles
 import plumber from "gulp-plumber";
 import notify from "gulp-notify";
+import webp from "gulp-webp";
 import webpack from "webpack-stream";
 import webpackConfig from "../webpack.config.dev.js";
 import { default as changed, compareContents } from "gulp-changed";
@@ -67,6 +68,10 @@ task("sass:dev", (done) => {
  */
 task("images:dev", (done) => {
   return src("./src/img/**/*")
+    .pipe(changed("./build/img/"))
+    .pipe(webp())
+    .pipe(dest("./build/img/"))
+    .pipe(src("./src/img/**/*"))
     .pipe(changed("./build/img/"))
     .pipe(dest("./build/img/"));
 });

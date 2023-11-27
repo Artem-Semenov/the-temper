@@ -21,8 +21,6 @@ export class Forms {
 
       this.#initSelects(this.#forms[formType]);
     });
-
-    console.log(this);
   }
 
   #initSelects(form) {
