@@ -7,7 +7,9 @@
     flex-shrink: 0;
     width: 169px;
     height: 71px;
-    background: var(--header-logo-url) center / cover no-repeat;
+    background-image: var(--header-logo-url);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   &__lang {
     position: absolute;
