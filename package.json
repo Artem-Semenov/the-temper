@@ -36,6 +36,8 @@
     "last 5 versions"
   ],
   "dependencies": {
+    "imagesloaded": "^5.0.0",
+    "masonry-layout": "^4.2.2",
     "tom-select": "^2.3.1"
   }
 }

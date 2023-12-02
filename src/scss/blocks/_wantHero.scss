@@ -1,0 +1,140 @@
+.wantHero {
+  padding: 148px 0 50px 0;
+  .container {
+    padding: 0 10px;
+  }
+  &__content {
+    color: #20261f;
+    font-style: normal;
+    line-height: normal;
+  }
+
+  &__title {
+    font-family: var(--font-accent);
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 17px;
+  }
+
+  &__desc {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__gallery {
+    @media (max-width: $containerWidth) {
+      margin: 0px -#{$containerPadding};
+    }
+  }
+
+  &__gallery-item {
+    font-size: 0;
+    @media (max-width: $containerdesktopSizeMMaxWidth) {
+      width: 100%;
+    }
+  }
+
+  &__gallery-item-1 {
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    font-size: 0;
+    object-fit: cover;
+  }
+
+  &__gallery-item-2 {
+  }
+
+  &__gallery-item-3 {
+  }
+
+  &__gallery-item-4 {
+  }
+
+  &__gallery-item-5 {
+  }
+
+  &__gallery-item-6 {
+  }
+
+  &__gallery-item-7 {
+  }
+
+  &__gallery-item-8 {
+  }
+
+  @media (min-width: $desktopSizeM) {
+    & {
+      padding: 200px 0 50px 0;
+    }
+    &__content {
+    }
+
+    &__title {
+      font-size: 92px;
+      text-align: left;
+      margin-bottom: 86px;
+    }
+
+    &__desc {
+      font-size: 48px;
+      text-align: left;
+    }
+
+    &__gallery {
+      margin: 0 -10px;
+    }
+
+    &__gallery-item {
+      padding: 10px;
+    }
+
+    &__gallery-item-1,
+    &__gallery-item-2 {
+      width: 39.5454545%;
+    }
+
+    &__gallery-item-3,
+    &__gallery-item-4 {
+      width: 60.4545455%;
+    }
+
+    &__gallery-item-5 {
+      width: 66.4772727%;
+    }
+
+    &__gallery-item-6 {
+      width: 33.5227273%;
+    }
+
+    &__gallery-item-7 {
+      width: 33.2954545%;
+    }
+
+    &__gallery-item-8 {
+      width: 66.7045455%;
+    }
+  }
+
+  @media (min-width: $desktopSizeL) {
+    & {
+      padding: 200px 0 50px 0;
+    }
+  }
+
+  @media (min-width: $desktopSizeXL) {
+    & {
+      padding: 276px 0 50px 0;
+      .container {
+        padding: 0 10px;
+        max-width: 1760px;
+      }
+    }
+  }
+}
+.container {
+}
