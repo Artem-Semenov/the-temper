@@ -13,11 +13,13 @@ document.addEventListener("DOMContentLoaded", (e) => {
   smoothAnchorScroll.init();
   const forms = new Forms();
 
-  const wantGalelry = document.querySelector(".wantHero__gallery");
-  if (wantGalelry) {
+  const galleryContainer =
+    document.querySelector(".wantHero__gallery") ||
+    document.querySelector(".startHero__gallery");
+  if (galleryContainer) {
     import("./gallery.js").then((module) => {
       const gallery = module.default;
-      gallery(wantGalelry);
+      gallery(galleryContainer);
     });
   }
 });

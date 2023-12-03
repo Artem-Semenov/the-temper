@@ -1,0 +1,224 @@
+.startHero {
+  &__content {
+    padding: 142px 0 18px 0px;
+  }
+
+  &__back {
+    a {
+      color: #464646;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 5px 0px;
+      margin-bottom: 36px;
+      transition: color $transition;
+      @media (any-hover: hover) {
+        &:hover {
+          color: var(--header-nav-color-active);
+        }
+      }
+      &::before {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='8' viewBox='0 0 17 8' fill='none'%3E%3Cpath d='M16 4.5C16.2761 4.5 16.5 4.27614 16.5 4C16.5 3.72386 16.2761 3.5 16 3.5L16 4.5ZM0.646447 3.64645C0.451185 3.84171 0.451185 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53554 1.17157C4.7308 0.97631 4.7308 0.659727 4.53554 0.464465C4.34027 0.269203 4.02369 0.269203 3.82843 0.464465L0.646447 3.64645ZM16 3.5L1 3.5L1 4.5L16 4.5L16 3.5Z' fill='%23464646'/%3E%3C/svg%3E");
+        display: block;
+      }
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    margin-bottom: 30px;
+  }
+
+  &__img {
+  }
+
+  &__desc {
+  }
+
+  &__label {
+    color: #bdbdb2;
+    font-family: Mariupol;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 114%; /* 15.96px */
+  }
+
+  &__title {
+    color: #20261f;
+    font-family: var(--font-accent);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 136.8%; /* 51.984px */
+  }
+
+  &__dates {
+    color: #414340;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 114%;
+    margin-bottom: 20px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #616161;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__gallery {
+  }
+
+  &__gallery-item {
+  }
+
+  &__gallery-item-1 {
+  }
+
+  &__gallery-item-2 {
+  }
+
+  &__gallery-item-3 {
+  }
+
+  &__gallery-item-4 {
+  }
+
+  &__gallery-item-5 {
+  }
+
+  @media (min-width: $desktopSizeM) {
+    .container {
+    }
+
+    & {
+    }
+
+    &__content {
+      padding: 190px 0 54px 0px;
+    }
+
+    &__back {
+      a {
+        font-size: 22px;
+        gap: 22px;
+        &::before {
+          content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='16' viewBox='0 0 22 16' fill='none'%3E%3Cpath d='M21 9C21.5523 9 22 8.55228 22 8C22 7.44772 21.5523 7 21 7L21 9ZM0.292892 7.2929C-0.0976315 7.68342 -0.0976314 8.31658 0.292893 8.70711L6.65686 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538409 7.04738 0.538409 6.65685 0.928933L0.292892 7.2929ZM21 7L1 7L1 9L21 9L21 7Z' fill='black'/%3E%3C/svg%3E");
+        }
+      }
+    }
+
+    &__body {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__img {
+      flex-basis: 51.4368%;
+    }
+
+    &__desc {
+      flex-basis: 46.6091%;
+    }
+
+    &__label {
+      font-size: 22px;
+    }
+
+    &__title {
+      font-size: 62px;
+    }
+
+    &__dates {
+      font-size: 30px;
+      margin-bottom: 18px;
+    }
+
+    &__info {
+      font-size: 20px;
+      gap: 25px;
+    }
+
+    &__gallery {
+      margin: 0 -15px;
+    }
+
+    &__gallery-item {
+      padding: 15px;
+    }
+
+    &__gallery-item-1,
+    &__gallery-item-3 {
+      width: 48.5362184%;
+    }
+
+    &__gallery-item-2,
+    &__gallery-item-4,
+    &__gallery-item-5 {
+      width: 49.7126432%;
+    }
+  }
+
+  @media (min-width: $desktopSizeL) {
+    &__label {
+      font-size: 26px;
+    }
+
+    &__title {
+      font-size: 72px;
+    }
+
+    &__dates {
+      font-size: 30px;
+      margin-bottom: 35px;
+    }
+
+    &__info {
+      font-size: 22px;
+      gap: 35px;
+    }
+  }
+
+  @media (min-width: $desktopSizeXL) {
+    &__content {
+      padding: 294px 0 54px 0px;
+    }
+    &__img {
+      flex-basis: 61.4368%;
+    }
+
+    &__desc {
+      flex-basis: 36.6091%;
+    }
+    &__label {
+      font-size: 28px;
+    }
+
+    &__title {
+      font-size: 82px;
+    }
+
+    &__dates {
+      font-size: 34px;
+      margin-bottom: 35px;
+    }
+
+    &__info {
+      font-size: 24px;
+      gap: 35px;
+    }
+  }
+}

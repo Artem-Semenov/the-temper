@@ -1,8 +1,6 @@
 .wantHero {
   padding: 148px 0 50px 0;
-  .container {
-    padding: 0 10px;
-  }
+
   &__content {
     color: #20261f;
     font-style: normal;
@@ -61,15 +59,20 @@
   &__gallery-item-8 {
   }
 
+  &__gallery {
+    margin: 0px -#{$containerPadding};
+  }
+
   @media (min-width: $desktopSizeM) {
+    .container {
+      padding: 0 10px;
+    }
     & {
       padding: 200px 0 50px 0;
     }
     &__content {
     }
-    &__gallery {
-      margin: 0px -#{$containerPadding};
-    }
+
     &__title {
       font-size: 92px;
       text-align: left;
