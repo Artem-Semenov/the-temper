@@ -3,9 +3,6 @@ import { Forms } from "./modules/Forms.js";
 import { collectionsTabs } from "./modules/collectionsTabs.js";
 import { faqAccordion } from "./modules/faq.js";
 import { SmoothAnchorScroll } from "./modules/smoothSCroll.js";
-import Masonry from "masonry-layout";
-
-import imagesLoaded from "imagesloaded";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   mobileNav();
@@ -18,13 +15,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
   const wantGalelry = document.querySelector(".wantHero__gallery");
   if (wantGalelry) {
-    imagesLoaded(wantGalelry, () => {
-      window.msnry = new Masonry(wantGalelry, {
-        itemSelector: ".wantHero__gallery-item",
-        percentPosition: true,
-        columnWidth: 1,
-        horizontalOrder: true,
-      });
+    import("./gallery.js").then((module) => {
+      const gallery = module.default;
+      gallery(wantGalelry);
     });
   }
 });

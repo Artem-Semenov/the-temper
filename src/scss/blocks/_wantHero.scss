@@ -23,12 +23,6 @@
     font-weight: 700;
   }
 
-  &__gallery {
-    @media (max-width: $containerWidth) {
-      margin: 0px -#{$containerPadding};
-    }
-  }
-
   &__gallery-item {
     font-size: 0;
     @media (max-width: $containerdesktopSizeMMaxWidth) {
@@ -73,7 +67,9 @@
     }
     &__content {
     }
-
+    &__gallery {
+      margin: 0px -#{$containerPadding};
+    }
     &__title {
       font-size: 92px;
       text-align: left;

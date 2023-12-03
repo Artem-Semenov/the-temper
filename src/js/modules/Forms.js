@@ -25,7 +25,7 @@ export class Forms {
 
   #initSelects(form) {
     form.selects.forEach((el) => {
-      new TomSelect(el, {
+      const tomSelect = new TomSelect(el, {
         create: false,
         sortField: {
           field: "text",

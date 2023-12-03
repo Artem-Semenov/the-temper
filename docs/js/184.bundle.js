@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[184],{184:function(e,n,t){t.r(n);var r=t(751),i=t.n(r),o=t(564),l=t.n(o);n.default=e=>{l()(e,(()=>{window.msnry=new(i())(e,{itemSelector:".wantHero__gallery-item",percentPosition:!0,columnWidth:1,horizontalOrder:!0})}))}}}]);
