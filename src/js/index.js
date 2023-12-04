@@ -16,10 +16,13 @@ document.addEventListener("DOMContentLoaded", (e) => {
   const galleryContainer =
     document.querySelector(".wantHero__gallery") ||
     document.querySelector(".startHero__gallery");
+  const ishorizontalOrder = Boolean(
+    document.querySelector(".wantHero__gallery")
+  );
   if (galleryContainer) {
     import("./gallery.js").then((module) => {
       const gallery = module.default;
-      gallery(galleryContainer);
+      gallery(galleryContainer, ishorizontalOrder);
     });
   }
 });

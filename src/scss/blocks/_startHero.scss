@@ -126,9 +126,12 @@
       align-items: center;
     }
 
-    &__img {
-      flex-basis: 51.4368%;
-    }
+    &__body {
+      .startHero__img {
+        flex-basis: 51.4368%;
+
+      }
+    }  
 
     &__desc {
       flex-basis: 46.6091%;
@@ -162,13 +165,13 @@
 
     &__gallery-item-1,
     &__gallery-item-3 {
-      width: 48.5362184%;
+      width: 49.4350282%;
     }
 
     &__gallery-item-2,
     &__gallery-item-4,
     &__gallery-item-5 {
-      width: 49.7126432%;
+      width: 50.5649718%;
     }
   }
 
@@ -196,8 +199,11 @@
     &__content {
       padding: 294px 0 54px 0px;
     }
-    &__img {
-      flex-basis: 61.4368%;
+
+    &__body {
+      .startHero__img {
+        flex-basis: 61.4368%;
+      }
     }
 
     &__desc {
