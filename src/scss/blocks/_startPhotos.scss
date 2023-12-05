@@ -99,7 +99,7 @@
       padding: 120px 0;
 
       .container {
-        font-size: 34px;
+        font-size: 28px;
         text-align: left;
         align-items: start;
         gap: 0;
@@ -195,5 +195,13 @@
   }
 
   @media (min-width: $desktopSizeXL) {
+    &__desc-wrapper {
+      .container {
+        font-size: 34px;
+        text-align: left;
+        align-items: start;
+        gap: 0;
+      }
+    }
   }
 }
