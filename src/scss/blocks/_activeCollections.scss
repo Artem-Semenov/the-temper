@@ -1,5 +1,5 @@
 .active-collections {
-  padding: 52px 0 34px 0;
+  padding: 52px 0 30px 0;
   background: #a8573e;
   &__content {
     color: var(--white);
@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 25px;
   }
 
   &__item {
@@ -32,7 +33,7 @@
     width: 100%;
     aspect-ratio: 1 / 0.678;
     margin-bottom: 20px;
-    border: 1px solid #C6C6C6;
+    border: 1px solid #c6c6c6;
   }
 
   &__desc {
@@ -77,16 +78,20 @@
   }
 
   &__controls {
+    --size: 60px;
+    width: var(--size);
+    height: var(--size);
     position: absolute;
     top: 0;
     right: 0;
     display: flex;
     flex-flow: row wrap;
-    max-width: 50px;
   }
 
   &__control {
-    padding: 2px;
+    --padding: 2px;
+    --inner-size: calc(100% - var(--padding));
+    padding: var(--padding);
     flex-basis: 50%;
     display: flex;
     justify-content: center;
@@ -114,24 +119,24 @@
     }
     &.active {
       .active-collections__control-inner {
-        border: 1px solid var(--white);
-        outline: 1px solid #d5d5d5;
+        border: 2px solid var(--white);
+        outline: 2px solid #d5d5d5;
       }
     }
   }
 
   &__control-inner {
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    border: 1px solid var(--white);
-    outline: 1px solid var(--white);
+    width: var(--inner-size);
+    height: var(--inner-size);
+    border: 2px solid var(--white);
+    outline: 2px solid var(--white);
   }
 
   &__item-button {
     a {
-      display: block;
       color: #fff;
+      display: block;
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
@@ -144,6 +149,16 @@
   }
 
   &__link {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    display: block;
+    margin: auto;
+    width: fit-content;
+    padding: 5px 15px;
   }
   @media (min-width: $desktopSizeM) {
     & {
@@ -161,6 +176,7 @@
 
     &__list {
       gap: 60px;
+      margin-bottom: 87px;
     }
 
     &__item {
@@ -169,6 +185,9 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      img {
+        width: 100%;
+      }
       &:nth-child(2) {
         img {
           width: 60%;
@@ -182,7 +201,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      
     }
 
     &__desc {
@@ -205,34 +223,28 @@
     }
 
     &__desc-text {
-      font-size: 16px;
+      font-size: 15px;
       margin-bottom: 0;
     }
 
     &__controls {
       position: static;
+      width: auto;
+      height: unset;
       max-width: 100%;
       justify-content: start;
       margin: auto 0;
+      gap: 5px;
     }
 
     &__control {
       flex-basis: unset;
-
-      &.active {
-        .active-collections__control-inner {
-          outline-width: 2px;
-          border-width: 2px;
-        }
-      }
     }
 
     &__control-inner {
       width: 25px;
       height: 25px;
       flex-direction: row;
-      outline-width: 2px;
-      border-width: 2px;
     }
 
     &__item-button {
@@ -242,6 +254,7 @@
       }
     }
     &__link {
+      font-size: 28px;
     }
   }
 
@@ -259,7 +272,7 @@
     }
     &__dates {
       font-size: 26px;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
     &__desc-text {
       font-size: 20px;
@@ -279,7 +292,6 @@
 
     &__dates {
       font-size: 28px;
-      margin-bottom: 73px;
     }
     &__desc-text {
       font-size: 26px;
@@ -289,6 +301,9 @@
         font-size: 26px;
         letter-spacing: 4.68px;
       }
+    }
+    &__link {
+      font-size: 32px;
     }
   }
 }
