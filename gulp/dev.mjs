@@ -67,13 +67,15 @@ task("sass:dev", (done) => {
  * To copy images from src to build
  */
 task("images:dev", (done) => {
-  return src("./src/img/**/*")
-    .pipe(changed("./build/img/"))
-    .pipe(webp())
-    .pipe(dest("./build/img/"))
-    .pipe(src("./src/img/**/*"))
-    .pipe(changed("./build/img/"))
-    .pipe(dest("./build/img/"));
+  return (
+    src("./src/img/**/*")
+      // .pipe(changed("./build/img/"))
+      // .pipe(webp())
+      // .pipe(dest("./build/img/"))
+      // .pipe(src("./src/img/**/*"))
+      .pipe(changed("./build/img/"))
+      .pipe(dest("./build/img/"))
+  );
 });
 
 /**

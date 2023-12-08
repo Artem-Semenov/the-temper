@@ -51,27 +51,29 @@ task("clean:docs", (done) => {
  * For icluding html partials
  */
 task("html:docs", (done) => {
-  return src(["./src/html/**/*.html", "!./src/html/blocks/*.html"])
-    .pipe(plumber(getPlumberNotifySettings("HTML")))
-    .pipe(
-      fileInclude({
-        prefix: "@@",
-        basepath: "@file",
-      })
-    )
-    /* .pipe(
+  return (
+    src(["./src/html/**/*.html", "!./src/html/blocks/*.html"])
+      .pipe(plumber(getPlumberNotifySettings("HTML")))
+      .pipe(
+        fileInclude({
+          prefix: "@@",
+          basepath: "@file",
+        })
+      )
+      /* .pipe(
       gulpHtmlImgWrapper({
         logger: true, // false for not showing message with amount of wrapped img tags for each file
         extensions: [".jpg", ".png", ".jpeg"], // write your own extensions pack (case insensitive)
       })
     ) */
-    .pipe(
-      changedInPlace({
-        firstPass: true,
-      })
-    )
-    .pipe(htmlclean())
-    .pipe(dest("./docs/"));
+      .pipe(
+        changedInPlace({
+          firstPass: true,
+        })
+      )
+      .pipe(htmlclean())
+      .pipe(dest("./docs/"))
+  );
 });
 
 /**
@@ -95,10 +97,10 @@ task("images:docs", (done) => {
   return (
     src("./src/img/**/*")
       .pipe(changed("./docs/img/"))
-      .pipe(webp())
-      .pipe(dest("./docs/img/"))
-      .pipe(src("./src/img/**/*"))
-      .pipe(changed("./docs/img/"))
+      //.pipe(webp())
+      // .pipe(dest("./docs/img/"))
+      // .pipe(src("./src/img/**/*"))
+      // .pipe(changed("./docs/img/"))
       /* .pipe(
       imagemin({
         verbose: true,
