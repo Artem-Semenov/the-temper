@@ -63,11 +63,11 @@
 
   @media (min-width: $desktopSizeM) {
     & {
-      padding-top: 114px;
-      padding-bottom: 97px;
+      padding-top: 85px;
+      padding-bottom: 60px;
     }
     &__content {
-      gap: 117px;
+      gap: 60px;
     }
 
     &__title {
@@ -84,7 +84,7 @@
     }
 
     &__li {
-      padding: 70px 0;
+      padding: 40px 0;
       text-align: left;
     }
 
@@ -120,6 +120,18 @@
   }
 
   @media (min-width: $desktopSizeL) {
+    & {
+      padding-top: 100px;
+      padding-bottom: 85px;
+    }
+
+    &__content {
+      gap: 90px;
+    }
+    &__li {
+      padding: 50px 0;
+      text-align: left;
+    }
     &__li-desc {
     }
     &__list {
@@ -131,6 +143,18 @@
   }
 
   @media (min-width: $desktopSizeXL) {
+    & {
+      padding-top: 114px;
+      padding-bottom: 97px;
+    }
+
+    &__content {
+      gap: 117px;
+    }
+    &__li {
+      padding: 70px 0;
+      text-align: left;
+    }
     &__li-title {
       font-size: 44px;
     }

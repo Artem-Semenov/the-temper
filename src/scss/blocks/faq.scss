@@ -52,22 +52,31 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     &::after {
-      content: "+";
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 5px;
+      content: "";
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
       border: 1px solid #a8573e;
       border-radius: 50%;
-      width: 20px;
-      height: 20px;
+      width: 21px;
+      height: 21px;
+    }
+    &::before {
+      content: "+";
+      position: absolute;
+      right: 22px;
+      top: 50%;
       font-size: 16px;
+      transform: translateY(-50%);
     }
 
     &.open {
-      &::after {
+      &::before {
         content: "-";
+        right: 23px;
       }
       & + .faq__answer {
         grid-template-rows: 1fr;
@@ -99,6 +108,7 @@
 
     &__title {
       font-size: 48px;
+      margin-bottom: 20px;
     }
 
     &__desc {
@@ -119,13 +129,25 @@
     &__btn {
       font-size: 28px;
       padding: 22px 18px;
+      &::after {
+        right: 16px;
+        width: 29px;
+        height: 29px;
+      }
+      &::before {
+        right: 24px;
+        top: 50%;
+        font-size: 22px;
+        transform: translateY(-50%);
+      }
+
       &.open {
-        + .faq__answer {
-          padding-bottom: 22px;
+        &::before {
+          content: "-";
+          right: 25px;
         }
       }
     }
-
     &__answer {
       font-size: 28px;
       padding-left: 18px;
