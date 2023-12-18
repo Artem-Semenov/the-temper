@@ -46,14 +46,95 @@
   &__animation {
     color: #a8573e;
     font-family: var(--font-accent);
-    font-size: 42px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
     text-align: center;
-    &:after {
+    display: inline-block;
+    position: relative;
+    width: 179px;
+    overflow: hidden;
+
+    /*  &:after {
       content: "авторського";
       animation: spin 4s linear infinite;
+    } */
+
+    .visual-hidden {
+      opacity: 0;
+    }
+  }
+
+  &__animation__body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    span {
+      margin-bottom: 20px;
+    }
+
+    &[data-step="1"] {
+      animation: changeWords1 0.5s linear forwards;
+    }
+
+    &[data-step="2"] {
+      animation: changeWords2 0.5s linear forwards;
+    }
+
+    &[data-step="3"] {
+      animation: changeWords3 0.5s linear forwards;
+    }
+
+    @keyframes changeWords1 {
+      0% {
+        transform: translateY(0%);
+      }
+
+      10% {
+        transform: translateY(5%);
+      }
+
+      90% {
+        transform: translateY(-37%);
+      }
+      100% {
+        transform: translateY(-33%);
+      }
+    }
+
+    @keyframes changeWords2 {
+      0% {
+        transform: translateY(-33%);
+      }
+
+      10% {
+        transform: translateY(-28%);
+      }
+
+      90% {
+        transform: translateY(-70%);
+      }
+
+      100% {
+        transform: translateY(-66%);
+      }
+    }
+
+    @keyframes changeWords3 {
+      0% {
+        transform: translateY(-66%);
+      }
+
+      90% {
+        transform: translateY(5%);
+      }
+
+      100% {
+        transform: translateY(0%);
+      }
     }
   }
 
@@ -70,7 +151,7 @@
       align-items: start;
     }
     &__title {
-      font-size: 100px;
+      font-size: 90px;
       text-align: left;
       column-gap: 20px;
       justify-content: start;
@@ -86,8 +167,13 @@
       font-size: 32px;
     }
     &__animation {
-      font-size: 100px;
+      width: 558px;
     }
+
+    &__animation__body {
+      align-items: start;
+    }
+
   }
 
   @media (min-width: $desktopSizeL) {
