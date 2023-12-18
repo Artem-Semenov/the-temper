@@ -38,6 +38,15 @@
     font-style: normal;
     font-weight: 900;
     line-height: normal;
+    a {
+      color: inherit;
+      transition: .3s all ease;
+      @media (any-hover: hover) {
+        &:hover {
+          color: #aea8a8;
+        }
+      }
+    }
   }
 
   &__desc {
@@ -94,6 +103,7 @@
 
     &__desc {
       font-size: 18px;
+      line-height: 1.1;
     }
   }
 

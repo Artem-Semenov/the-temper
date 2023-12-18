@@ -22,7 +22,7 @@
     flex-direction: column;
     gap: 5px;
     .temperament__text-item:nth-child(1) {
-      margin-left: -40px;
+      margin-left: -250px;
     }
     .temperament__text-item:nth-child(2) {
       margin-left: 190px;
@@ -37,7 +37,6 @@
     color: rgba(236, 236, 236, 0.15);
     font-size: 18px;
     font-style: normal;
-    font-weight: 500;
     line-height: normal;
     margin-right: 10px;
     &.active {
@@ -64,11 +63,11 @@
   }
   @media (min-width: $desktopSizeM) {
     &__text-node {
-      font-size: 34px;
+      font-size: 28px;
     }
     &__text-body {
       width: 6700px;
-      gap: 10px;
+      gap: 5px;
       .temperament__text-item:nth-child(1) {
         margin-left: 70px;
       }
@@ -81,7 +80,7 @@
     }
     &__text {
       margin-bottom: 140px;
-      gap: 10px;
+      gap: 5px;
       > .temperament__text-item {
         align-self: start;
         width: 6700px;
@@ -113,7 +112,13 @@
   }
 
   @media (min-width: $desktopSizeXL) {
+    &__text {
+      gap: 10px;
+
+    }
     &__text-body {
+      gap: 10px;
+
       .temperament__text-item:nth-child(1) {
         margin-left: 200px;
       }
@@ -123,6 +128,9 @@
       .temperament__text-item:nth-child(3) {
         margin-left: 205px;
       }
+    }
+    &__text-node {
+      font-size: 34px;
     }
   }
 }

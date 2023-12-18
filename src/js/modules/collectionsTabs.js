@@ -1,18 +1,37 @@
 export function collectionsTabs() {
-  const tabs = document.querySelectorAll(".collections__nav-button");
-  const lists = document.querySelectorAll(".collections__list");
-  if (!tabs.length) return;
+  const triggers = document.querySelectorAll(".collections__nav-button");
+  const tabs = document.querySelectorAll(".collections__list");
+  const container = document.querySelector(".collections__list-container");
+  if (!triggers.length) return;
 
-  tabs.forEach((el) => {
+  const adjustHeight = (list) => {
+    const height = list.scrollHeight;
+    container.style.height = height + "px";
+  };
+
+  triggers.forEach((el) => {
     el.addEventListener("click", (e) => {
       const type = e.target.dataset.view;
-      [...tabs, ...lists].forEach((el) => {
+      const targetList = document.querySelector(
+        `.collections__list[data-type=${type}]`
+      );
+
+      adjustHeight(targetList);
+
+      triggers.forEach((el) => {
         el.classList.remove("active");
       });
       e.target.classList.add("active");
-      document
-        .querySelector(`.collections__list[data-type=${type}]`)
-        .classList.add("active");
+
+      tabs.forEach((el) => {
+        el.classList.remove("fade-in");
+        el.classList.add("fade-out");
+      });
+
+      targetList.classList.remove("fade-out");
+      targetList.classList.add("fade-in");
     });
   });
+
+  triggers[0].click();
 }

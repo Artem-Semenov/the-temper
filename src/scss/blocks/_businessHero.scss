@@ -38,20 +38,31 @@
       text-align: left;
     }
     &__title {
-      font-size: 90px;
+      font-size: 80px;
     }
     &__desc {
-      max-width: 821px;
-      font-size: 28px;
+      max-width: 591px;
+      font-size: 20px;
     }
   }
 
   @media (min-width: $desktopSizeL) {
     &__title {
-      font-size: 100px;
+      font-size: 90px;
+    }
+    &__desc {
+      max-width: 711px;
+      font-size: 24px;
     }
   }
 
   @media (min-width: $desktopSizeXL) {
+    &__title {
+      font-size: 100px;
+    }
+    &__desc {
+      max-width: 821px;
+      font-size: 28px;
+    }
   }
 }

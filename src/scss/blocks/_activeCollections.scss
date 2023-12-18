@@ -35,6 +35,11 @@
     margin-bottom: 20px;
     border: 1px solid #c6c6c6;
   }
+  &__download-btn {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+  }
 
   &__desc {
     position: relative;
@@ -60,7 +65,6 @@
 
   &__dates {
     color: #585858;
-    font-family: Mariupol;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -143,8 +147,15 @@
       line-height: normal;
       letter-spacing: 2.52px;
       background: #484e3e;
+      transition: 0.3s all ease;
       text-align: center;
       padding: 20px 0;
+
+      @media (any-hover: hover) {
+        &:hover {
+          background: #9d8067;
+        }
+      }
     }
   }
 
@@ -154,15 +165,15 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-decoration-line: underline;
     display: block;
     margin: auto;
     width: fit-content;
     padding: 5px 15px;
+    text-decoration: underline;
   }
   @media (min-width: $desktopSizeM) {
     & {
-      padding: 102px 0 109px 0;
+      padding: 72px 0 57px 0;
     }
 
     &__content {
@@ -176,7 +187,7 @@
 
     &__list {
       gap: 60px;
-      margin-bottom: 87px;
+      margin-bottom: 57px;
     }
 
     &__item {
@@ -201,8 +212,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
     }
 
+    &__download-btn {
+      top: 22px;
+      right: 22px;
+    }
     &__desc {
       flex-basis: 49%;
       display: flex;
@@ -218,7 +234,8 @@
     }
 
     &__dates {
-      font-size: 20px;
+      font-weight: 300;
+      font-size: 14px;
       margin-bottom: 10px;
     }
 
@@ -271,7 +288,7 @@
       font-size: 40px;
     }
     &__dates {
-      font-size: 26px;
+      font-size: 18px;
       margin-bottom: 20px;
     }
     &__desc-text {
@@ -286,6 +303,9 @@
   }
 
   @media (min-width: $desktopSizeXL) {
+    & {
+      padding: 102px 0 57px 0;
+    }
     &__desc-title {
       font-size: 48px;
     }

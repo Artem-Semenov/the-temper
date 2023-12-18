@@ -151,7 +151,7 @@
       align-items: start;
     }
     &__title {
-      font-size: 90px;
+      font-size: 80px;
       text-align: left;
       column-gap: 20px;
       justify-content: start;
@@ -177,9 +177,17 @@
   }
 
   @media (min-width: $desktopSizeL) {
+    &__title {
+      font-size: 90px;
+
+    }
   }
 
   @media (min-width: $desktopSizeXL) {
+    &__title {
+      font-size: 100px;
+
+    }
   }
 }
 

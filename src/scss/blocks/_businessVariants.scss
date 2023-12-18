@@ -41,7 +41,7 @@
       padding: 148px 0 110px 0;
     }
     &__title {
-      font-size: 32px;
+      font-size: 24px;
       margin-bottom: 55px;
     }
     &__desc {
@@ -50,9 +50,15 @@
   }
 
   @media (min-width: $desktopSizeL) {
+    &__title {
+      font-size: 28px;
+    }
   }
 
   @media (min-width: $desktopSizeXL) {
+    &__title {
+      font-size: 32px;
+    }
   }
 }
 .container {
