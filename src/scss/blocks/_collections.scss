@@ -182,7 +182,7 @@
 
     &__head {
       flex-direction: row;
-      align-items: end;
+      align-items: start;
       gap: 124px;
       margin-bottom: 88px;
     }
@@ -192,6 +192,8 @@
     }
 
     &__nav {
+      margin-top: 52px;
+      gap: 25px;
       align-items: start;
     }
 

@@ -27,10 +27,7 @@ export class Forms {
     form.selects.forEach((el) => {
       const tomSelect = new TomSelect(el, {
         create: false,
-        sortField: {
-          field: "text",
-          direction: "asc",
-        },
+        sortField: [{ field: "$order" }, { field: "$score" }],
       });
     });
   }
