@@ -80,9 +80,19 @@
   }
 
   &__gallery {
+    video {
+      width: calc(100% - 30px);
+      height: auto;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      object-fit: cover;
+      aspect-ratio: 1 / 1.80118343;
+    }
   }
 
   &__gallery-item {
+    position: relative;
   }
 
   &__gallery-item-1 {
@@ -92,6 +102,9 @@
   }
 
   &__gallery-item-3 {
+    img {
+      opacity: 0;
+    }
   }
 
   &__gallery-item-4 {
