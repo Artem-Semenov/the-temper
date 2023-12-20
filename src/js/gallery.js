@@ -1,7 +1,6 @@
 import Masonry from "masonry-layout";
-import imagesLoaded from "imagesloaded";
 
-export default (galleryContainer, horizontalOrder) => {
+export default (galleryContainer, horizontalOrder, imagesLoaded) => {
   imagesLoaded(galleryContainer, () => {
     window.msnry = new Masonry(galleryContainer, {
       percentPosition: true,

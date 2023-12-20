@@ -69,13 +69,13 @@
       width: 6700px;
       gap: 5px;
       .temperament__text-item:nth-child(1) {
-        margin-left: 70px;
+        margin-left: 170px;
       }
       .temperament__text-item:nth-child(2) {
         margin-left: 365px;
       }
       .temperament__text-item:nth-child(3) {
-        margin-left: 455px;
+        margin-left: 255px;
       }
     }
     &__text {
@@ -84,7 +84,7 @@
       > .temperament__text-item {
         align-self: start;
         width: 6700px;
-        margin-left: 80px;
+        margin-left: -390px;
       }
     }
 
@@ -100,13 +100,13 @@
   @media (min-width: $desktopSizeL) {
     &__text-body {
       .temperament__text-item:nth-child(1) {
-        margin-left: 280px;
+        margin-left: 450px;
       }
       .temperament__text-item:nth-child(2) {
         margin-left: 205px;
       }
       .temperament__text-item:nth-child(3) {
-        margin-left: -125px;
+        margin-left: 450px;
       }
     }
   }
@@ -120,7 +120,7 @@
       gap: 10px;
 
       .temperament__text-item:nth-child(1) {
-        margin-left: 200px;
+        margin-left: -250px;
       }
       .temperament__text-item:nth-child(2) {
         margin-left: 525px;

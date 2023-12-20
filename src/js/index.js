@@ -5,10 +5,11 @@ import { faqAccordion } from "./modules/faq.js";
 import { SmoothAnchorScroll } from "./modules/smoothSCroll.js";
 import { objectScenes } from "./modules/3dScenes.js";
 import { heroWords } from "./modules/heroWords.js";
+import imagesLoaded  from "imagesloaded";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   mobileNav();
-  collectionsTabs();
+  collectionsTabs(imagesLoaded);
   faqAccordion();
   objectScenes();
   heroWords();
@@ -26,7 +27,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   if (galleryContainer) {
     import("./gallery.js").then((module) => {
       const gallery = module.default;
-      gallery(galleryContainer, ishorizontalOrder);
+      gallery(galleryContainer, ishorizontalOrder, imagesLoaded);
     });
   }
 });

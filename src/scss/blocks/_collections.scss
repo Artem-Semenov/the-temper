@@ -125,7 +125,7 @@
 
   &__list-item-inactive {
     img {
-      filter: blur(3px);
+      filter: blur(2px);
     }
     .collections__list-item-label {
       background: #a0a0a0;
@@ -134,7 +134,10 @@
 
   &__list-item-coming {
     img {
-      filter: blur(2.5px);
+      // filter: blur(2.5px);
+    }
+    .collections__list-item-img {
+      border: 1px solid #d3d3d3;
     }
     .collections__list-item-label {
       left: 0;
@@ -150,6 +153,7 @@
 
   &__list-item-img {
     width: 100%;
+
     img {
       width: 100%;
     }
@@ -315,6 +319,8 @@
 
 .fade-out {
   animation: fadeOut 0.15s linear 0s 1 forwards;
+  pointer-events: none;
+  touch-action: none;
 }
 
 .fade-in {

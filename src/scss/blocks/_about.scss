@@ -1,7 +1,5 @@
 .about {
   color: var(--white);
-  &__container {
-  }
 
   &__content {
     margin: 0 (-$containerPadding);
@@ -39,11 +37,11 @@
     font-weight: 900;
     line-height: normal;
     a {
-      color: inherit;
+      color: #A8573E;
       transition: .3s all ease;
       @media (any-hover: hover) {
         &:hover {
-          color: #aea8a8;
+        //  color: #aea8a8;
         }
       }
     }

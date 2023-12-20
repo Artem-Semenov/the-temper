@@ -29,8 +29,8 @@ $inputBg: rgba(32, 38, 31, 0.54);
   --black: #000;
   --accent: #ac182c;
   --mobile-nav-btn-color: var(--black);
-  --header-nav-color: var(--black);
-  --header-nav-color-active: #aea8a8;
+  --header-nav-color: #aea8a8;
+  --header-nav-color-active: var(--black);
   --header-logo-url: url("/img/common/logo-black.svg");
 
   --input-bg: #{$inputBg};

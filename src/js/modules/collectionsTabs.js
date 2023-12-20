@@ -1,4 +1,4 @@
-export function collectionsTabs() {
+export function collectionsTabs(imagesLoaded) {
   const triggers = document.querySelectorAll(".collections__nav-button");
   const tabs = document.querySelectorAll(".collections__list");
   const container = document.querySelector(".collections__list-container");
@@ -33,5 +33,5 @@ export function collectionsTabs() {
     });
   });
 
-  triggers[0].click();
+  imagesLoaded(container, () => triggers[0].click());
 }
