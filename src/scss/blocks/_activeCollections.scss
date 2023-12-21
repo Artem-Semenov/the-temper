@@ -45,9 +45,12 @@
 
   &__desc {
     position: relative;
+    display: flex;
+    flex-direction: column;
   }
 
   &__desc-label {
+    order: 1;
     color: #bebebe;
     font-size: 12px;
     font-style: normal;
@@ -57,6 +60,7 @@
   }
 
   &__desc-title {
+    order: 2;
     color: #20261f;
     font-family: var(--font-accent);
     font-size: 28px;
@@ -66,6 +70,7 @@
   }
 
   &__dates {
+    order: 3;
     color: #585858;
     font-size: 16px;
     font-style: normal;
@@ -75,6 +80,7 @@
   }
 
   &__desc-text {
+    order: 5;
     color: #616161;
     font-size: 14px;
     font-style: normal;
@@ -84,43 +90,104 @@
   }
 
   &__controls {
-    --size: 60px;
-    width: var(--size);
-    height: var(--size);
-    position: absolute;
-    top: 0;
-    right: 0;
+    order: 4;
+    width: 100%;
     display: flex;
+    justify-content: center;
     flex-flow: row wrap;
+    margin-bottom: 20px;
   }
 
   &__control {
+    --size: 35px;
     --padding: 2px;
     --inner-size: calc(100% - var(--padding));
+    width: var(--size);
+    height: var(--size);
     padding: var(--padding);
-    flex-basis: 50%;
+    flex-basis: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     &:nth-child(1) {
       .active-collections__control-inner {
-        background-color: #a8573e;
+        background-color: #1c2627;
       }
     }
     &:nth-child(2) {
       .active-collections__control-inner {
-        background-color: #9d8067;
+        background-color: #383330;
       }
     }
     &:nth-child(3) {
       .active-collections__control-inner {
-        background-color: #d9d9d9;
+        background-color: #565038;
       }
     }
     &:nth-child(4) {
       .active-collections__control-inner {
-        background-color: #484e3e;
+        background-color: #535562;
+      }
+    }
+    &:nth-child(5) {
+      .active-collections__control-inner {
+        background-color: #884f1a;
+      }
+    }
+    &:nth-child(6) {
+      .active-collections__control-inner {
+        background-color: #3e576d;
+      }
+    }
+    &:nth-child(7) {
+      .active-collections__control-inner {
+        background-color: #6e8289;
+      }
+    }
+    &:nth-child(8) {
+      .active-collections__control-inner {
+        background-color: #d16932;
+      }
+    }
+    &:nth-child(9) {
+      .active-collections__control-inner {
+        background-color: #945953;
+      }
+    }
+    &:nth-child(10) {
+      .active-collections__control-inner {
+        background-color: #a0857a;
+      }
+    }
+    &:nth-child(11) {
+      .active-collections__control-inner {
+        background-color: #858180;
+      }
+    }
+    &:nth-child(12) {
+      .active-collections__control-inner {
+        background-color: #d4b4a9;
+      }
+    }
+    &:nth-child(13) {
+      .active-collections__control-inner {
+        background-color: #d3c1b7;
+      }
+    }
+    &:nth-child(14) {
+      .active-collections__control-inner {
+        background-color: #a39592;
+      }
+    }
+    &:nth-child(15) {
+      .active-collections__control-inner {
+        background-color: #cbc2bd;
+      }
+    }
+    &:nth-child(16) {
+      .active-collections__control-inner {
+        background-color: #e8ded5;
       }
     }
     &.active {
@@ -140,6 +207,7 @@
   }
 
   &__item-button {
+    order: 6;
     a {
       color: #fff;
       display: block;
@@ -192,7 +260,7 @@
 
     &__list {
       gap: 60px;
-    //  margin-bottom: 57px;
+      //  margin-bottom: 57px;
     }
 
     &__item {
@@ -225,8 +293,6 @@
     }
     &__desc {
       flex-basis: 49%;
-      display: flex;
-      flex-direction: column;
     }
 
     &__desc-label {
@@ -244,11 +310,13 @@
     }
 
     &__desc-text {
+      order: 4;
       font-size: 15px;
       margin-bottom: 0;
     }
 
     &__controls {
+      order: 5;
       position: static;
       width: auto;
       height: unset;
@@ -259,12 +327,11 @@
     }
 
     &__control {
+      --size: 23px;
       flex-basis: unset;
     }
 
     &__control-inner {
-      width: 25px;
-      height: 25px;
       flex-direction: row;
     }
 
@@ -287,7 +354,9 @@
       flex-direction: row;
       justify-content: space-between;
     }
-
+    &__control {
+      --size: 30px;
+    }
     &__desc-title {
       font-size: 40px;
     }
@@ -313,7 +382,9 @@
     &__desc-title {
       font-size: 48px;
     }
-
+    &__control {
+      --size: 45px;
+    }
     &__dates {
       font-size: 28px;
     }
