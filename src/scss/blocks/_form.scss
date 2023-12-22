@@ -336,6 +336,7 @@
       line-height: 1;
     }
     &__button {
+      border-radius: var(--border-radius);
       margin: auto;
       font-size: 22px;
       padding: 15px 55px;

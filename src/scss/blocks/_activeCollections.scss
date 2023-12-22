@@ -97,7 +97,9 @@
     flex-flow: row wrap;
     margin-bottom: 20px;
   }
-
+  .start &__controls {
+    justify-content: start;
+  }
   &__control {
     --size: 35px;
     --padding: 2px;
@@ -194,6 +196,29 @@
       .active-collections__control-inner {
         border: 2px solid var(--white);
         outline: 2px solid #d5d5d5;
+      }
+    }
+  }
+
+  .start &__control {
+    &:nth-child(1) {
+      .active-collections__control-inner {
+        background-color: #A8573E;
+      }
+    }
+    &:nth-child(2) {
+      .active-collections__control-inner {
+        background-color: #9D8067;
+      }
+    }
+    &:nth-child(3) {
+      .active-collections__control-inner {
+        background-color: #D9D9D9;
+      }
+    }
+    &:nth-child(4) {
+      .active-collections__control-inner {
+        background-color: #484E3E;
       }
     }
   }

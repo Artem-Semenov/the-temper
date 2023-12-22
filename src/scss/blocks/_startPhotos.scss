@@ -99,15 +99,25 @@
       padding: 120px 0;
 
       .container {
-        font-size: 28px;
         text-align: left;
         align-items: start;
         gap: 0;
       }
     }
-
+    .inline-img-wrapper {
+      display: inline-flex;
+      align-items: end;
+      img {
+        display: block;
+      }
+    }
     &__desc {
-      max-width: 1561px;
+      max-width: 1061px;
+      font-size: 20px;
+      img {
+        display: block;
+        width: 13px;
+      }
     }
 
     &__list {
@@ -174,7 +184,7 @@
       text-align: right;
     }
     &__li-title {
-      font-size: 52px;
+      font-size: 44px;
     }
     &__li-photos {
       width: 100%;
@@ -192,15 +202,31 @@
   }
 
   @media (min-width: $desktopSizeL) {
+    &__li-title {
+      font-size: 48px;
+    }
+    &__desc {
+      font-size: 22px;
+    }
   }
 
   @media (min-width: $desktopSizeXL) {
+    &__li-title {
+      font-size: 52px;
+    }
     &__desc-wrapper {
       .container {
         font-size: 34px;
         text-align: left;
         align-items: start;
         gap: 0;
+      }
+    }
+    &__desc {
+      max-width: 1561px;
+      font-size: 34px;
+      img {
+        width: 21px;
       }
     }
   }

@@ -63,7 +63,7 @@
   }
   @media (min-width: $desktopSizeM) {
     &__text-node {
-      font-size: 28px;
+      font-size: 24px;
     }
     &__text-body {
       width: 6700px;
@@ -106,7 +106,7 @@
         margin-left: 205px;
       }
       .temperament__text-item:nth-child(3) {
-        margin-left: 450px;
+        margin-left: 350px;
       }
     }
   }
@@ -114,13 +114,12 @@
   @media (min-width: $desktopSizeXL) {
     &__text {
       gap: 10px;
-
     }
     &__text-body {
       gap: 10px;
 
       .temperament__text-item:nth-child(1) {
-        margin-left: -250px;
+        margin-left: -650px;
       }
       .temperament__text-item:nth-child(2) {
         margin-left: 525px;

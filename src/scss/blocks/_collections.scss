@@ -192,12 +192,12 @@
     }
 
     &__title {
-      font-size: 100px;
+      font-size: 80px;
     }
 
     &__nav {
       margin-top: 52px;
-      gap: 25px;
+      gap: 20px;
       align-items: start;
     }
 
@@ -205,7 +205,7 @@
     }
 
     &__nav-button {
-      font-size: 26px;
+      font-size: 22px;
       &.active {
         color: var(--black);
         &::before {
@@ -285,18 +285,34 @@
   }
 
   @media (min-width: $desktopSizeL) {
+    &__nav-button {
+      font-size: 24px;
+    }
+    &__title {
+      font-size: 90px;
+    }
     &__list-item-title {
       font-size: 28px;
       margin-bottom: 9px;
     }
 
     &__list-item-desc {
-      font-size: 22px;
+      font-size: 20px;
       letter-spacing: 0.96px;
     }
   }
 
   @media (min-width: $desktopSizeXL) {
+    &__nav {
+      gap: 25px;
+    }
+
+    &__nav-button {
+      font-size: 26px;
+    }
+    &__title {
+      font-size: 100px;
+    }
     & {
       padding-top: 278px;
     }

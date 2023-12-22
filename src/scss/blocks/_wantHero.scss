@@ -75,13 +75,13 @@
     }
 
     &__title {
-      font-size: 92px;
+      font-size: 90px;
       text-align: left;
       margin-bottom: 86px;
     }
 
     &__desc {
-      font-size: 48px;
+      font-size: 40px;
       text-align: left;
     }
 
@@ -123,12 +123,20 @@
   }
 
   @media (min-width: $desktopSizeL) {
+    &__desc {
+      font-size: 42px;
+      text-align: left;
+    }
     & {
       padding: 200px 0 50px 0;
     }
   }
 
   @media (min-width: $desktopSizeXL) {
+    &__desc {
+      font-size: 48px;
+      text-align: left;
+    }
     & {
       padding: 276px 0 50px 0;
       .container {
