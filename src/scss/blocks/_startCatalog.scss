@@ -44,6 +44,9 @@
     padding-top: 40px;
     text-align: center;
   }
+  .skittlesCatalog &__right-text {
+    padding-top: 15px;
+  }
   &__left,
   &__right {
     position: relative;
@@ -118,6 +121,5 @@
       padding-left: 35px;
       font-size: 38px;
     }
-
   }
 }
