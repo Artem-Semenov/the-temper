@@ -4,15 +4,13 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    h2:not(:nth-of-type(1)) {
-      margin: 10px 0;
-    }
   }
 
   &__title {
     font-weight: 700;
     font-size: 18px;
     text-align: center;
+    margin: 10px 0;
   }
 
   &__paragraph {
@@ -21,15 +19,14 @@
   }
 
   @media (min-width: $desktopSizeM) {
-
   }
 
   @media (min-width: $desktopSizeL) {
     &__title {
       font-size: 22px;
     }
-  
-      &__paragraph {
+
+    &__paragraph {
       font-size: 18px;
     }
   }
@@ -38,8 +35,8 @@
     &__title {
       font-size: 28px;
     }
-  
-      &__paragraph {
+
+    &__paragraph {
       font-size: 22px;
     }
   }
