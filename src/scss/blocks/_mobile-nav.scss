@@ -13,9 +13,9 @@
     display: flex;
     gap: 23px;
     a {
-      color: #fff;
+      color: rgba(255, 255, 255, 0.45);
       &.active {
-        color: rgba(255, 255, 255, 0.45);
+        color: #fff;
       }
     }
   }
@@ -66,7 +66,6 @@
   line-height: normal;
   @media (min-width: $desktopSizeM) {
     font-weight: 400;
-
   }
   a {
     color: var(--header-nav-color);
