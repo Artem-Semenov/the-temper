@@ -136,7 +136,9 @@
         .startPhotos__li-photo-right {
           flex-basis: 47%;
         }
+        
       }
+      
       &:nth-child(2) {
         .startPhotos__li-photo-left {
           flex-basis: 32%;
@@ -177,6 +179,26 @@
         }
       }
     }
+
+    &.skittlesPhotos {
+      .startPhotos__li {
+        &:nth-child(1) {
+
+          .startPhotos__li-photo-left {
+            flex-basis: 62%;
+          }
+  
+          .startPhotos__li-photo-right {
+            flex-basis: 38%;
+            img {
+              transform: translateY(-34px);
+            }
+          }
+          
+      }
+    }
+  }
+
     &__li-photo-left {
       text-align: left;
     }
@@ -230,5 +252,26 @@
         width: 21px;
       }
     }
+
+    
+    &.skittlesPhotos {
+      .startPhotos__li {
+        &:nth-child(1) {
+
+          .startPhotos__li-photo-left {
+            flex-basis: 62%;
+          }
+  
+          .startPhotos__li-photo-right {
+            flex-basis: 38%;
+            img {
+              transform: translateY(-48px);
+            }
+          }
+          
+      }
+    }
+  }
+  
   }
 }
