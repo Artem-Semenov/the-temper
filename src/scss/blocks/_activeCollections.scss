@@ -203,22 +203,22 @@
   .start &__control {
     &:nth-child(1) {
       .active-collections__control-inner {
-        background-color: #A8573E;
+        background-color: #a8573e;
       }
     }
     &:nth-child(2) {
       .active-collections__control-inner {
-        background-color: #9D8067;
+        background-color: #9d8067;
       }
     }
     &:nth-child(3) {
       .active-collections__control-inner {
-        background-color: #D9D9D9;
+        background-color: #d9d9d9;
       }
     }
     &:nth-child(4) {
       .active-collections__control-inner {
-        background-color: #484E3E;
+        background-color: #484e3e;
       }
     }
   }
@@ -296,11 +296,8 @@
       justify-content: space-between;
       img {
         width: 100%;
-      }
-      &:nth-child(2) {
-        img {
-          width: 60%;
-        }
+        height: 100%;
+        object-fit: cover;
       }
     }
 
