@@ -22,8 +22,7 @@
       display: inline-flex;
       align-items: end;
       padding: 0 5px;
-      img {
-      }
+      margin-right: -5px;
     }
   }
 
@@ -241,6 +240,9 @@
         text-align: left;
         align-items: start;
         gap: 0;
+      }
+      .inline-img-wrapper {
+        padding: 0 8px;
       }
     }
     &__desc {
