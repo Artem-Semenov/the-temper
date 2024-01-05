@@ -73,7 +73,9 @@ task("images:dev", (done) => {
       // .pipe(webp())
       // .pipe(dest("./build/img/"))
       // .pipe(src("./src/img/**/*"))
-      .pipe(changed("./build/img/"))
+      .pipe(changed("./build/img/"), {
+        hasChanged: changed.compareContents,
+      })
       .pipe(dest("./build/img/"))
   );
 });

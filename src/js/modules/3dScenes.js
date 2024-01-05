@@ -16,7 +16,7 @@ export function objectScenes() {
         sceneContainer.classList.add("loading");
         imageNode.setAttribute(
           "src",
-          `/img/home/activeCollections/${sceneTitle}/${colorIndex}.png`
+          `/img/home/activeCollections/${sceneTitle}/${colorIndex}.${sceneTitle === 'skittles' ? 'png' : 'jpg'}`
         );
       });
     });
