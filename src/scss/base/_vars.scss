@@ -51,7 +51,12 @@ $inputBg: rgba(32, 38, 31, 0.54);
   }
 }
 
-.home,
+.home {
+  --mobile-nav-btn-color: var(--white);
+  --header-nav-color: #fff;
+  --header-nav-color-active: #e97350;
+  --header-logo-url: url("/img/common/logo.svg");
+}
 .business {
   --mobile-nav-btn-color: var(--white);
   --header-nav-color: #aea8a8;
