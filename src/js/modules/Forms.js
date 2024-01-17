@@ -41,7 +41,13 @@ export class Forms {
     this.#sendForm(formType)
       .then(
         (res) => {
-          formObj.formNode.parentElement.parentElement.classList.add("success");
+          if (res.ok) {
+            formObj.formNode.parentElement.parentElement.classList.add(
+              "success"
+            );
+          } else {
+            formObj.formNode.classList.add("error");
+          }
         },
         (error) => {
           formObj.formNode.classList.add("error");
@@ -59,14 +65,18 @@ export class Forms {
   #sendForm = async (formType) => {
     const formObj = this.#forms[formType];
     let data = this.#getFormData(formType);
-    return new Promise((res) => {
+    /*  return new Promise((res) => {
       setTimeout(() => {
         res();
       }, 3000);
-    });
+    }); */
     try {
-      let res = await fetch("../files/sendmail.php");
-      res = await res.json();
+      const body = new FormData(formObj.form);
+      let res = await fetch("/files/mail.php", {
+        body,
+        method: "POST",
+      });
+      //res = await res.json();
       console.log(res);
       return res;
     } catch (e) {
