@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    @@include('../blocks/meta.html') @@include('../blocks/fonts.html')
+  </head>
 
-<head>
-
-	@@include('../blocks/meta.html')
-	@@include('../blocks/fonts.html')
-</head>
-
-<body>
-	@@include('../blocks/svgSprite.html')
-
-	@@include('../blocks/header.html', {
-	active: '',
-	})
-	<div class="main">
-
-		@@include('../blocks/startHero.html')
-		@@include('../blocks/startPhotos.html')
-		@@include('../blocks/startCatalog.html')
-		@@include('../blocks/form.html')
-	</div>
-	@@include('../blocks/footer.html')
-	<script src="/js/index.bundle.js"></script>
-</body>
-
+  <body>
+    @@include('../blocks/svgSprite.html') @@include('../blocks/header.html', {
+    active: '', })
+    <div class="main">
+      @@include('../blocks/startHero.html')
+      @@include('../blocks/startPhotos.html')
+      @@include('../blocks/startCatalog.html') @@include('../blocks/form.html')
+    </div>
+    @@include('../blocks/footer.html')
+    <script src="/js/index.bundle.js?v=13"></script>
+  </body>
 </html>

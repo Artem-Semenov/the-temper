@@ -1,26 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    @@include('blocks/meta.html') @@include('blocks/fonts.html')
+  </head>
 
-<head>
+  <body class="privacy">
+    @@include('blocks/svgSprite.html') @@include('blocks/header.html', { active:
+    '', })
+    <div class="main">
+      @@include('blocks/privacy.html')
 
-	@@include('blocks/meta.html')
-	@@include('blocks/fonts.html')
-</head>
-
-<body class="privacy">
-	@@include('blocks/svgSprite.html')
-
-	@@include('blocks/header.html', {
-	active: '',
-	})
-	<div class="main">
-		@@include('blocks/privacy.html')
-
-		<!-- @@include('blocks/form.html') -->
-
-	</div>
-	@@include('blocks/footer.html')
-	<script src="./js/index.bundle.js"></script>
-</body>
-
+      <!-- @@include('blocks/form.html') -->
+    </div>
+    @@include('blocks/footer.html')
+    <script src="./js/index.bundle.js?v=13"></script>
+  </body>
 </html>
