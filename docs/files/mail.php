@@ -49,4 +49,4 @@ $headers = "MIME-Version: 1.0" . PHP_EOL .
 'From: '.adopt($project_name).' <'.$admin_email.'>' . PHP_EOL .
 'Reply-To: '.$admin_email.'' . PHP_EOL;
 
-mail('artem.semenov.101@gmail.com', adopt($form_subject), $message, $headers );
+mail('thetemper.ua@gmail.com', adopt($form_subject), $message, $headers );

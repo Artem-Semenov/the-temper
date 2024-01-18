@@ -1,9 +1,8 @@
 <header class="header">
-    <div class="container">
-        <div class="header__row">
-            <a href="/"
-               class="logo header__logo">
-                <!--     <picture>
+  <div class="container">
+    <div class="header__row">
+      <a href="/" class="logo header__logo">
+        <!--     <picture>
                     <source media="(min-width: 1024px)"
                             srcset="/img/common/logo.svg"
                             width="190"
@@ -14,38 +13,47 @@
                          width="169"
                          height="71">
                 </picture> -->
-            </a>
-            <div class="mobile-nav">
-                <div class="mobile-nav__body">
-                    <div class="header__lang d-s">
-                        <a href="#!"
-                           class="">ENG</a>
-                        <a href="#!"
-                           class="active">УКР</a>
-                    </div>
-                    <ul class="mobile-nav__list">
-                        <li><a href="/collections"
-                               class="@@if (active === 'collections') {active}">Колекції</a></li>
-                        <li><a href="/business"
-                               class="@@if (active === 'business') {active}">Бізнес</a></li>
-                        <li><a href="/want"
-                               class="@@if (active === 'want') {active}">Хочу!</a></li>
-                        <li><a href="#contacts"
-                               class="@@if (active === 'contacts') {active}">Контакти</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="header__lang d-l">
-
-                <a href="#!"
-                   class="">ENG</a>
-                /
-                <a href="#!"
-                   class="active">УКР</a>
-            </div>
-            <button class="mobile-nav-btn">
-                <div class="nav-icon"></div>
-            </button>
+      </a>
+      <div class="mobile-nav">
+        <div class="mobile-nav__body">
+          <div class="header__lang d-s">
+            <a href="https://en.thetemper.com.ua" class="active">ENG</a>
+            <a href="https://ua.thetemper.com.ua" class="">УКР</a>
+          </div>
+          <ul class="mobile-nav__list">
+            <li>
+              <a
+                href="/collections"
+                class="@@if (active === 'collections') {active}"
+                >Колекції</a
+              >
+            </li>
+            <li>
+              <a href="/business" class="@@if (active === 'business') {active}"
+                >Бізнес</a
+              >
+            </li>
+            <li>
+              <a href="/want" class="@@if (active === 'want') {active}"
+                >Хочу!</a
+              >
+            </li>
+            <li>
+              <a href="#contacts" class="@@if (active === 'contacts') {active}"
+                >Контакти</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
+      <div class="header__lang d-l">
+        <a href="https://en.thetemper.com.ua" class="active">ENG</a>
+        /
+        <a href="https://ua.thetemper.com.ua" class="">УКР</a>
+      </div>
+      <button class="mobile-nav-btn">
+        <div class="nav-icon"></div>
+      </button>
     </div>
+  </div>
 </header>

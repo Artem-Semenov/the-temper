@@ -71,7 +71,7 @@ export class Forms {
         let params = new FormData(formObj.formNode);
         let request = new XMLHttpRequest();
 
-        request.open("POST", "/files/mail.php?v=13", true);
+        request.open("POST", "/files/mail.php?v=14", true);
         request.send(params);
 
         request.onreadystatechange = function () {
